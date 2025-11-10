@@ -1,3 +1,83 @@
 <resources>
-    <string name="app_name">ProyectoMovilesKCH</string>
+    <string name="app_name">KCH</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="link_register">Register new user</string>
+    <string name="desc_login_icon">Login or profile</string>
+
+    <!-- Dashboard / Main -->
+    <string name="welcome_message">Welcome to KCH Health Assistant</string>
+    <string name="opt_reserve_appointment">Reserve appointment</string>
+    <string name="opt_my_doctors">My doctors</string>
+    <string name="opt_medical_history">Medical history</string>
+    <string name="opt_add_images">Add images</string>
+    <string name="opt_monitor_activity">Monitor activity</string>
+    <string name="opt_health_tips">Health &amp; Nutrition</string>
+    <string name="opt_chat_history">Chat history</string>
+    <string name="opt_call_history">Call history</string>
+
+    <!-- Doctor list -->
+    <string name="title_my_doctors">My doctors</string>
+    <string name="desc_more">More options</string>
+    <string name="person_name_format">%1$s %2$s</string>
+
+    <!-- Contact options -->
+    <string name="contact_title">Contact</string>
+    <string name="contact_send_message">Send message</string>
+    <string name="contact_video_call">Video call</string>
+    <string name="contact_call">Login</string>
+
+    <!-- Message -->
+    <string name="title_send_message">Send Message</string>
+    <string name="hint_write_message">Write your message here...</string>
+    <string name="btn_send">Send</string>
+    <string name="toast_message_sent">Message sent</string>
+
+    <!-- Calling -->
+    <string name="title_calling">Calling...</string>
+    <string name="desc_mute">Mute</string>
+    <string name="desc_speaker">Speaker</string>
+    <string name="desc_end_call">End call</string>
+
+    <!-- Appointments -->
+    <string name="add_appointment">Add appointment</string>
+    <string name="hint_doctor_name">Doctor name</string>
+    <string name="hint_date">Appointment date</string>
+    <string name="hint_reason">Reason</string>
+    <string name="toast_saved">Appointment saved successfully</string>
+    <string name="toast_deleted">Appointment deleted</string>
+
+    <!-- Profile -->
+    <string name="hint_name">Full name</string>
+    <string name="hint_email">Email address</string>
+    <string name="btn_update_profile">Update profile</string>
+    <string name="toast_updated">Profile updated</string>
+
+    <!-- Generic -->
+    <string name="btn_close">Close</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_more">More</string>
+
+    <!-- Add Appointment -->
+    <string name="select_doctor">Select Doctor</string>
+    <string name="select_date">Select Date</string>
+    <string name="enter_date_hint">Enter appointment date</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="notes_hint">Write additional information</string>
+    <string name="save_appointment">Save Appointment</string>
+
+    <!-- Patient Profile -->
+    <string name="profile_image">Profile Image</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="patient_email">Patient Email</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <!-- Toasts / errors -->
+    <string name="toast_error">An error occurred</string>
 </resources>
