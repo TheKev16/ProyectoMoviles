@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/tvCalling"
+        android:text="@string/title_calling"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView android:id="@+id/imgCaller"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnMute"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:layout_margin="22dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_mute"
+            android:src="@android:drawable/ic_lock_silent_mode" />
+
+        <ImageButton
+            android:id="@+id/btnSpeaker"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_margin="22dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_speaker"
+            android:src="@android:drawable/ic_lock_silent_mode_off" />
+
+        <ImageButton
+            android:id="@+id/btnEndCall"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:layout_margin="22dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_end_call"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+</LinearLayout>

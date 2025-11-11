@@ -1,4 +1,4 @@
-package com.Kevin.proyectomovileskch
+package com.kevin.proyectomovileskch
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.Kevin.proyectomovileskch", appContext.packageName)
+        assertEquals("com.kevin.proyectomovileskch", appContext.packageName)
     }
 }
