@@ -33,127 +33,199 @@
 
         <ImageButton
             android:id="@+id/btnLoginIcon"
-            android:src="@android:drawable/ic_menu_manage"
+            android:layout_width="51dp"
+            android:layout_height="44dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/desc_login_icon"
-            android:layout_width="44dp"
-            android:layout_height="44dp"/>
+            android:src="@android:drawable/ic_menu_manage" />
     </LinearLayout>
 
     <!-- Grid content -->
     <GridLayout
         android:id="@+id/gridOptions"
-        android:columnCount="2"
-        android:rowCount="4"
-        android:padding="16dp"
-        android:layout_marginTop="72dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="656dp"
+        android:layout_marginTop="72dp"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="4">
 
         <!-- Each item is a simple Card-like button -->
-        <LinearLayout android:id="@+id/btnAppointments"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnAppointments"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_my_calendar" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_reserve_appointment" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_my_calendar" />
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_reserve_appointment" />
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnDoctors"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnDoctors"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_agenda" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_my_doctors" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_agenda" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_my_doctors" />
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnProfile"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnProfile"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_info_details" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_medical_history" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_info_details" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_medical_history" />
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnAddImages"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnAddImages"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_camera" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_add_images" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_add_images" />
         </LinearLayout>
 
         <!-- second row -->
-        <LinearLayout android:id="@+id/btnMonitorActivity"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnMonitorActivity"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_compass" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_monitor_activity" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_compass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_monitor_activity" />
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnHealthTips"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnHealthTips"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_info_details" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_health_tips" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_info_details" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_health_tips" />
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnChatHistory"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnChatHistory"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_send" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_chat_history" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <TextView
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_chat_history" />
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnCallHistory"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
+        <LinearLayout
+            android:id="@+id/btnCallHistory"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
             android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
             android:background="@drawable/option_card"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView android:src="@android:drawable/ic_menu_call" android:layout_width="48dp" android:layout_height="48dp"/>
-            <TextView android:text="@string/opt_call_history" android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opt_call_history" />
         </LinearLayout>
 
     </GridLayout>
@@ -168,10 +240,33 @@
         android:layout_width="match_parent"
         android:layout_height="72dp">
 
-        <ImageButton android:src="@android:drawable/ic_menu_search" android:background="@null" android:layout_margin="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
-        <ImageButton android:src="@android:drawable/ic_menu_view" android:background="@null" android:layout_margin="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
-        <ImageButton android:src="@android:drawable/ic_menu_info_details" android:background="@null" android:layout_margin="8dp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+        <ImageButton
+            android:id="@+id/btnBottomSearch"
+            android:src="@android:drawable/ic_menu_search"
+            android:background="@null"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
+        <ImageButton
+            android:id="@+id/btnBottomHome"
+            android:src="@android:drawable/ic_menu_view"
+            android:background="@null"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnBottomInfo"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:background="@null"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
     </LinearLayout>
+
 
 </FrameLayout>

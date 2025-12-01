@@ -46,6 +46,15 @@
             android:src="@android:drawable/ic_lock_silent_mode_off" />
 
         <ImageButton
+            android:id="@+id/btnVideo"
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_video"
+            android:layout_margin="8dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+        <ImageButton
             android:id="@+id/btnEndCall"
             android:layout_width="43dp"
             android:layout_height="42dp"

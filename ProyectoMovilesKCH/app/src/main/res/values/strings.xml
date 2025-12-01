@@ -29,8 +29,7 @@
     <!-- Contact options -->
     <string name="contact_title">Contact</string>
     <string name="contact_send_message">Send message</string>
-    <string name="contact_video_call">Video call</string>
-    <string name="contact_call">Login</string>
+    <string name="contact_call">Call</string>
 
     <!-- Message -->
     <string name="title_send_message">Send Message</string>
@@ -39,10 +38,20 @@
     <string name="toast_message_sent">Message sent</string>
 
     <!-- Calling -->
-    <string name="title_calling">Calling...</string>
-    <string name="desc_mute">Mute</string>
-    <string name="desc_speaker">Speaker</string>
+    <string name="title_calling">Calling</string>
+    <string name="title_video_calling">Video calling</string>
+    <string name="desc_mute">Mute microphone</string>
+    <string name="desc_speaker">Toggle speaker</string>
+    <string name="desc_video">Toggle video</string>
     <string name="desc_end_call">End call</string>
+    <string name="toast_muted">Microphone muted</string>
+    <string name="toast_unmuted">Microphone unmuted</string>
+    <string name="toast_speaker_on">Speaker on</string>
+    <string name="toast_speaker_off">Speaker off</string>
+    <string name="toast_video_on">Video enabled</string>
+    <string name="toast_video_off">Video disabled</string>
+    <string name="toast_call_ended">Call ended</string>
+
 
     <!-- Appointments -->
     <string name="add_appointment">Add appointment</string>

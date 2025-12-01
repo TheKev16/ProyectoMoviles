@@ -30,8 +30,7 @@ class DoctorAdapter(context: Context, private val doctors: List<Doctor>) : BaseA
             // Popup menu with options
             val popup = PopupMenu(parent?.context, it)
             popup.menu.add(0, 0, 0, parent?.context?.getString(R.string.contact_send_message))
-            popup.menu.add(0, 1, 1, parent?.context?.getString(R.string.contact_video_call))
-            popup.menu.add(0, 2, 2, parent?.context?.getString(R.string.contact_call))
+            popup.menu.add(0, 1, 1, parent?.context?.getString(R.string.contact_call))
             popup.setOnMenuItemClickListener { menuItem ->
                 when (menuItem.itemId) {
                     0 -> {
@@ -40,11 +39,8 @@ class DoctorAdapter(context: Context, private val doctors: List<Doctor>) : BaseA
                         parent?.context?.startActivity(i)
                         true
                     }
+
                     1 -> {
-                        Toast.makeText(parent?.context, "Video call prototype (not implemented)", Toast.LENGTH_SHORT).show()
-                        true
-                    }
-                    2 -> {
                         val i = android.content.Intent(parent?.context, com.kevin.proyectomovileskch.ui.call.CallingActivity::class.java)
                         i.putExtra("doctorId", doctor.id)
                         parent?.context?.startActivity(i)

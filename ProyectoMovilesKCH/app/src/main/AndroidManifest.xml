@@ -30,7 +30,7 @@
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.doctor.DoctorListActivity" />
         <activity android:name=".ui.appointment.AppointmentListActivity" />
-        <activity android:name=".ui.appointment.AddAppointmentActivity" />
+        <activity android:name="com.kevin.proyectomovileskch.ui.appointment.AddAppointmentActivity" />
         <activity android:name=".ui.profile.PatientProfileActivity" />
         <activity android:name=".ui.message.MessageActivity" />
         <activity android:name=".ui.call.CallingActivity" />
@@ -39,6 +39,11 @@
         <activity android:name=".ui.HealthTipsActivity" />
         <activity android:name=".ui.ChatHistoryActivity" />
         <activity android:name=".ui.CallHistoryActivity" />
+        <activity android:name=".ui.doctor.DoctorCrudActivity" />
+        <activity android:name=".ui.patient.PatientCrudActivity" />
+        <activity android:name=".ui.appointment.AppointmentCrudActivity" />
+
+
 
     </application>
 

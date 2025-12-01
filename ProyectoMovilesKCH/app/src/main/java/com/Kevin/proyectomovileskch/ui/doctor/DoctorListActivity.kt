@@ -10,6 +10,7 @@ import com.kevin.proyectomovileskch.R
 import com.kevin.proyectomovileskch.controller.DoctorController
 import com.kevin.proyectomovileskch.data.manager.MemoryDataManager
 import com.kevin.proyectomovileskch.data.model.Doctor
+import com.kevin.proyectomovileskch.ui.call.CallingActivity
 import com.kevin.proyectomovileskch.ui.doctor.adapter.DoctorAdapter
 
 class DoctorListActivity : AppCompatActivity() {
@@ -48,7 +49,7 @@ class DoctorListActivity : AppCompatActivity() {
     }
 
     private fun showContactOptions(doctor: Doctor) {
-        val options = arrayOf(getString(R.string.contact_send_message), getString(R.string.contact_video_call), getString(R.string.contact_call))
+        val options = arrayOf(getString(R.string.contact_send_message), getString(R.string.contact_call))
         AlertDialog.Builder(this)
             .setTitle(getString(R.string.person_name_format, doctor.firstName, doctor.lastName))
             .setItems(options) { _, which ->
@@ -59,7 +60,10 @@ class DoctorListActivity : AppCompatActivity() {
                         startActivity(i)
                     }
                     1 -> {
-                        Toast.makeText(this, "Video call prototype (not implemented)", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, CallingActivity::class.java)
+                        intent.putExtra("CALL_TYPE", "video") // o "audio"
+                        startActivity(intent)
+
                     }
                     2 -> {
                         val i = Intent(this, com.kevin.proyectomovileskch.ui.call.CallingActivity::class.java)
