@@ -31,6 +31,7 @@
         <activity android:name=".ui.doctor.DoctorListActivity" />
         <activity android:name=".ui.appointment.AppointmentListActivity" />
         <activity android:name="com.kevin.proyectomovileskch.ui.appointment.AddAppointmentActivity" />
+        <activity android:name=".ui.images.ImageListActivity" />
         <activity android:name=".ui.profile.PatientProfileActivity" />
         <activity android:name=".ui.message.MessageActivity" />
         <activity android:name=".ui.call.CallingActivity" />
